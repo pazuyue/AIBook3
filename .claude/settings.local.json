@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(json|yaml|yml|toml|ini|cfg|conf|env\\)$\")",
+      "Bash(claude mcp *)",
+      "Read(//c/Users/yueguang/.claude/**)",
+      "Bash(node *)",
+      "Bash(curl -s http://127.0.0.1:6333/collections)",
+      "WebSearch",
+      "WebFetch(domain:wiki.biligame.com)",
+      "Bash(dir *)",
+      "Read(//d/Users/yueguang/NovelFlow/**)",
+      "Read(//d/Users/yueguang/NovelFlow/references/**)",
+      "Bash(mkdir -p \"归档/设定归档_20260612\")",
+      "Bash(mv 设定/.bak \"归档/设定归档_20260612/根目录bak\")",
+      "Bash(mv 设定/人物设定/.bak \"归档/设定归档_20260612/人物设定bak\")",
+      "Bash(mv \"设定/大纲内容/第一卷/.bak\" \"归档/设定归档_20260612/第一卷bak\")",
+      "Bash(mv \"设定/大纲内容/第一卷/第一卷新版21章总表_历史废弃_禁止召回.md\" \"归档/设定归档_20260612/\")",
+      "Bash(grep -nE \"^#{1,2} \" \"文风设定.md\")",
+      "Bash(grep -nE \"^#{1,2} \" \"大纲内容/故事线推进表.md\")",
+      "Bash(grep -nE \"^#{1,2} \" \"人物设定/主角能力发展设定.md\")",
+      "Bash(sed -n '20,30p;55,75p' \"第一卷/第一卷分卷大纲.md\")",
+      "Bash(sed -n '5,15p' \"第一卷/第一卷写作设定包.md\")",
+      "Bash(sed -n '24,40p' \"三月女神定稿入库skill.md\")",
+      "Bash(sed -n '320,360p' \"三月女神新章节规划skill.md\")",
+      "Bash(sed -n '131,173p' \"三月女神定稿前检查skill.md\")",
+      "Bash(sed -n '46,90p' \"三月女神写作风格skill.md\")"
+    ]
+  }
+}
