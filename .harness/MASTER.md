@@ -30,7 +30,7 @@
 | "看看设定有没有冲突" / "/review" / "/check-setting" / "/check-outline" / "/check-skill" | canon | 读取权威源 + 出审校报告 |
 | "剧情存疑" / "/plot-review" / "/idea-boost" | canon | 出建议报告 |
 | "定稿" / "/finalize" / "/refinalize*" | finalize | 入库 + 同步状态/伏笔/Qdrant/references |
-| "拆章" / "/split-chapter" | mavis 主线（不派发）| 人工裁决后由 mavis 主线执行全文件链同步 |
+| "拆章" / "/split-chapter" | mavis 主线（不派发）| 先做节拍分流；人工裁决后执行正文/映射/缓存同步，定稿后结构变更再接 C 层入库清理 |
 
 ## 四、派发约束
 

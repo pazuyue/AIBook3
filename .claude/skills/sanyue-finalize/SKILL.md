@@ -1,8 +1,8 @@
 ---
 name: sanyue_finalize
-description: 《三月女神今天也只是普通学生》定稿入库与向量上传规则；处理 /finalize、/refinalize 系列和 /upload-*；在 /split-chapter 流程中负责 C 层入库清理；不负责正文续写。
-version: v2.3
-updated: 2026-06-11
+description: 《三月女神今天也只是普通学生》定稿入库与向量上传规则；处理 /finalize、/refinalize 系列和 /upload-*；被 /split-chapter 流程内部调用时负责 C 层入库清理；不负责正文续写。
+version: v2.4
+updated: 2026-06-15
 trigger:
   - /finalize
   - /refinalize
@@ -12,7 +12,6 @@ trigger:
   - /upload-world
   - /upload-char
   - /upload-lore
-  - /split-chapter
 tools:
   - qdrant_mcp
 ---

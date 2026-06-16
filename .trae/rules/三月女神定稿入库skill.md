@@ -1,8 +1,8 @@
 ---
 name: sanyue_finalize
-description: 《三月女神今天也只是普通学生》定稿入库与向量上传规则；处理 /finalize、/refinalize 系列和 /upload-*；在 /split-chapter 流程中负责 C 层入库清理；不负责正文续写。
-version: v2.3
-updated: 2026-06-11
+description: 《三月女神今天也只是普通学生》定稿入库与向量上传规则；处理 /finalize、/refinalize 系列和 /upload-*；被 /split-chapter 流程内部调用时负责 C 层入库清理；不负责正文续写。
+version: v2.4
+updated: 2026-06-15
 trigger:
   - /finalize
   - /refinalize
@@ -12,7 +12,6 @@ trigger:
   - /upload-world
   - /upload-char
   - /upload-lore
-  - /split-chapter
 tools:
   - qdrant_mcp
 ---
@@ -31,13 +30,13 @@ tools:
 1. 对已确认定稿章节执行状态更新、章节摘要、伏笔追踪、references 同步和 Qdrant 入库。
 2. 归档已完成的章节计划和 write brief，推进当前写作状态到下一章。
 3. 对世界观、人物、伏笔等已确认权威片段执行上传或同步。
-4. 在 `/split-chapter` 流程中，负责 C 层入库清理：清理 Qdrant 旧数据、重新定稿入库、同步 references。
+4. 被 `/split-chapter` 流程内部调用时，负责 C 层入库清理：清理 Qdrant 旧数据、重新定稿入库、同步 references。
 
 不负责：
 1. 不续写正文，不原位修文。
 2. 不审稿，不裁决章节是否好看。
 3. 不在未确认定稿或章节号明显不匹配时强行入库。
-4. 不执行拆章的 A 层（计划层）和 B 层（正文层）操作，由新章节规划 skill 负责。
+4. 不作为 `/split-chapter` 的外部入口，不执行拆章的 A 层（计划层）和 B 层（正文层）操作；外部入口由新章节规划 skill 负责。
 
 被 Master 调用时，只处理定稿归档和记忆同步维度，不反向改正文。
 
