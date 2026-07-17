@@ -37,7 +37,7 @@ Use this index to reject stale outline or generation context. Do not treat this 
 - Read `设定/当前硬口径.md` first for the latest execution boundary.
 - Read the current volume `*当前写作状态.md`, writing pack, caliber card, event chain, rhythm table, and chapter outline before generating or editing volume material.
 - Read `设定/大纲内容/故事线推进表.md` for moon-line debut pacing and long-arc staging.
-- Read `设定/术语口径统一表.md`, `设定/战斗设定.md`, and the current volume caliber card for术式/吟唱/展开, old-training-building, gray-zone investigation, and enemy-unit boundaries.
+- For personal cores/releases/domain manifestation and universal spell numbering/chanting, read `设定/神秘设定.md` for mechanisms, `设定/战斗设定.md` for combat scale and presentation, `设定/术语口径统一表.md` for terminology, and the two continuity archives (`设定/核心技与解放归档.md`, `设定/术式吟唱归档.md`) for finalized names and reuse. Apply the current volume caliber card to old-training-building, gray-zone investigation, and enemy-unit boundaries.
 - If older cached outlines, Qdrant recall, references, or this instruction file conflict with local AIBook3 authority files, treat the older material as stale.
 
 ## Project docs and assistant configs
