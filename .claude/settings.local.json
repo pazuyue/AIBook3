@@ -24,7 +24,9 @@
       "Bash(sed -n '24,40p' \"三月女神定稿入库skill.md\")",
       "Bash(sed -n '320,360p' \"三月女神新章节规划skill.md\")",
       "Bash(sed -n '131,173p' \"三月女神定稿前检查skill.md\")",
-      "Bash(sed -n '46,90p' \"三月女神写作风格skill.md\")"
+      "Bash(sed -n '46,90p' \"三月女神写作风格skill.md\")",
+      "PowerShell(git *)",
+      "Bash(python *)"
     ]
   }
 }
