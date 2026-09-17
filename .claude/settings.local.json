@@ -26,7 +26,10 @@
       "Bash(sed -n '131,173p' \"三月女神定稿前检查skill.md\")",
       "Bash(sed -n '46,90p' \"三月女神写作风格skill.md\")",
       "PowerShell(git *)",
-      "Bash(python *)"
+      "Bash(python *)",
+      "Bash(git -c core.quotePath=false -c core.safecrlf=false diff --check -- '设定')",
+      "Bash(git -c core.quotePath=false -c core.safecrlf=false diff --stat -- '设定')",
+      "Bash(git *)"
     ]
   }
 }
