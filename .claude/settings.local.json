@@ -29,7 +29,8 @@
       "Bash(python *)",
       "Bash(git -c core.quotePath=false -c core.safecrlf=false diff --check -- '设定')",
       "Bash(git -c core.quotePath=false -c core.safecrlf=false diff --stat -- '设定')",
-      "Bash(git *)"
+      "Bash(git *)",
+      "PowerShell(git diff --check -- \"正文/第一卷/第8章_307宿舍·入住.md\"; git diff --stat -- \"正文/第一卷/第8章_307宿舍·入住.md\"; $diff = git diff --unified=0 -- \"正文/第一卷/第8章_307宿舍·入住.md\"; \\($diff | Where-Object { $_ -match '^@@ ' } | Measure-Object\\).Count)"
     ]
   }
 }
