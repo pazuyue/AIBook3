@@ -4,7 +4,7 @@ import os
 import re
 import unicodedata
 
-DIR = r"D:\Users\yueguang\AIProject\AIBook3\正文\第一卷"
+DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "正文", "第一卷")
 
 def is_cjk(ch):
     return '\u4e00' <= ch <= '\u9fff' or '\u3400' <= ch <= '\u4dbf' or '\uf900' <= ch <= '\ufaff'

@@ -9,7 +9,7 @@ type: team
 project: AIBook3
 scope: project
 roster:
-  - writer      # 写手：/write /write-brief /chapter-plan /chapter-review
+  - writer      # 写手：/write /write-brief(辅助整理人工卡) /chapter-plan /quality-card /chapter-review
   - qa          # 质检：硬词→去 AI→读感 三步走
   - canon       # 设定审校：/review /check-setting /check-outline /check-skill /plot-review
   - finalize    # 定稿入库：/finalize /refinalize* /upload-*

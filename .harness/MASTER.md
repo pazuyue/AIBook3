@@ -23,7 +23,7 @@
 
 | 用户给的信号 | 派发对象 | 命令 |
 | ------------ | -------- | ---- |
-| "写下一章" / "/write" / "/write-brief" | writer | /chapter-plan → /write-brief → /write |
+| "写下一章" / "/write" / "/chapter-plan" / "/quality-card" | writer | /chapter-plan → /quality-card → /write-brief（人工确认写作卡）→ /write |
 | "这章跑偏了，重做" / "/rewrite-plan" | mavis 主线（不派发）| /rewrite-plan → /rewrite-next → /rewrite-check → /rewrite-fix → /rewrite-final-check → finalize |
 | "质检一下" / "/word-check" / "/hardword-check" / "/self-revise" | qa | 三步走：硬词→去 AI→读感 |
 | "改文风" / "/style" / "/polish" / "/fix-prose" | qa | /fix-prose → /self-revise |
